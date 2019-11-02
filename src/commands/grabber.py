@@ -20,7 +20,8 @@ class Grabber(wpilib.command.Command):
         elif abs(openArm_trigger) > 0.1: #left trigger triggered
             self.intake.openGrabber()
         elif joystick1.getRawButton(3):
-            self.intake.open2Grabber()
+            self.intake.close2Grabber()
+            turnOffWheels = False
         elif joystick1.getRawButton(2):
             self.intake.open2Grabber()
             turnOffWheels = False

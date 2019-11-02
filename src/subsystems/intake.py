@@ -53,15 +53,15 @@ class Intake(Subsystem):
 
     def close2Grabber(self):
         self.intake_motor_closeOpen.set(0.4)
-        self.cubeOut()
+        self.cubeIn()
 
 
     def grabberOff(self):
         self.motor_closeOpen_set(0)
 
     def cubeOut(self):
-        self.intake_motor_rightWheel.set(0.5)
-        self.intake_motor_leftWheel.set(-0.5)
+        self.intake_motor_rightWheel.set(1)
+        self.intake_motor_leftWheel.set(-1)
 
     def cubeIn(self):
         self.intake_motor_rightWheel.set(-1)
