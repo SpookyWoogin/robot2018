@@ -71,6 +71,7 @@ class Elevator(Subsystem):
         self.motor.set(ctre.ControlMode.MotionMagic, position * self.ratio)
 
     def initDefaultCommand(self):
+        pass
         self.setDefaultCommand(ElevatorTest())
 
     def ftToEncoder_accel(self, ftPerSec_sq):

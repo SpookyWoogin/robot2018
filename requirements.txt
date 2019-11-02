@@ -7,4 +7,4 @@ robotpy-installer
 robotpy-wpilib-utilities
 wpilib
 robotpy-ctre
-
+pyfrc-navx

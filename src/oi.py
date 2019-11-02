@@ -15,6 +15,6 @@ def getJoystick():
 def getJoystick1():
     global joystick1
     if joystick1 is None:
-        joystick1 = Joystick(1)
+        joystick1 = Joystick(0)
 
     return joystick1
